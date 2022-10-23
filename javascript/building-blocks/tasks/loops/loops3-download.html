@@ -41,8 +41,25 @@
 
 
     // Add your code here
-
-
+    var j;
+function startPrime () {
+ for (let j = start; j<= i; j++) {
+    if (isPrime(j)){
+      console.log(j)
+      return j;
+      break;
+    }
+  }
+}
+for (i; i>start; i--){
+  if (isPrime(i)){
+    if(i=== startPrime()) {
+      para.textContent += 'and' + i + ',';
+    } else {
+      para.textContent += i, ',';
+    }
+  }
+}
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);
